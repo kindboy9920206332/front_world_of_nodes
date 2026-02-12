@@ -23,7 +23,7 @@ export default function Register() {
     if (res.res.status===200){
         cash.setAccess(res.data?.data.accessToken)
         cash.setRefresh(res.data?.data.refreshToken)
-        router.push("/employee");
+        router.push("/employeeStart");
         }
     console.log(res)
     console.log("REGISTER_FORM:", register , otp);

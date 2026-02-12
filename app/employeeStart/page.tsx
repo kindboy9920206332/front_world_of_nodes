@@ -1,4 +1,4 @@
-import SelectNodes from "@/components/pages/employee/selectNodes";
+import SelectNodes from "@/components/pages/employeeStart/selectNodes";
 
 export default function EmployeePage() {
 
@@ -9,10 +9,7 @@ export default function EmployeePage() {
         <>
         
         <div className="min-h-screen w-full flex justify-center items-center">
-        
         <SelectNodes />
-        
-
         </div>
         </>
 

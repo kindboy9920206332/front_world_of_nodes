@@ -4,7 +4,8 @@ import { DarkLightToggleButton } from "@/components/ui/btns/darkLight";
 import { checkRefershToken } from "@/utils/checkRefreshToken";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import HomeGame from "./home";
+import HomeGame from "../home";
+import TableOrders from "@/components/pages/orders/tables";
 
 export default function Home() {
 const router = useRouter()
@@ -22,6 +23,7 @@ useEffect(()=>{
   }
   checkAPi()
 } , [])
+
 
 
 

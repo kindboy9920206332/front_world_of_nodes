@@ -1,10 +1,10 @@
 import { ApiResponse } from "./basicApis";
-import { InfoUser } from "./infoUser";
+import { GetUserInfoPayload } from "./infoUser";
 
 export type RegisterResult = {
 accessToken:string,
 refreshToken:string,
-user:InfoUser,
+user:GetUserInfoPayload,
 };
 
 
@@ -17,7 +17,7 @@ otp:string
 export type Login = {
 accessToken:string,
 refreshToken:string,
-user:InfoUser,
+user:GetUserInfoPayload,
 }
 
 export type RegisterResponse = ApiResponse<RegisterResult>;

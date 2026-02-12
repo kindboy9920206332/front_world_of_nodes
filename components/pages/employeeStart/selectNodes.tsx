@@ -43,7 +43,7 @@ export default function SelectNodes() {
 
   if (ndoesDefualt === null) {
     return (
-      <div className="min-h-screen grid place-items-center bg-background text-text dark:bg-background-dark dark:text-text-dark">
+      <div className="min-h-screen grid place-items-center">
         <div className="text-center">
           <div className="mx-auto h-10 w-10 rounded-full border-2 border-black/20 dark:border-white/20 border-t-black dark:border-t-white animate-spin" />
           <div className="mt-3 text-sm text-secondary dark:text-secondary-dark">
@@ -56,7 +56,7 @@ export default function SelectNodes() {
 
   if (ndoesDefualt === "error") {
     return (
-      <div className="min-h-screen grid place-items-center bg-background text-text dark:bg-background-dark dark:text-text-dark">
+      <div className="min-h-screen grid place-items-center">
         <div className="text-center">
           <div className="text-xl font-semibold">Error!</div>
           <div className="mt-2 text-sm text-secondary dark:text-secondary-dark">
@@ -68,7 +68,7 @@ export default function SelectNodes() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-text dark:bg-background-dark dark:text-text-dark">
+    <div className="min-h-screen">
       {/* subtle background */}
       <div className="pointer-events-none absolute inset-0 opacity-40">
         <div className="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full blur-3xl bg-black/10 dark:bg-white/10" />

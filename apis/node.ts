@@ -19,8 +19,8 @@ export class NodesApis {
     }
 
     
-    getNodes  = async()=>{
-      const res  = await clientApi.get({url:`/node/getNodes/list`,isJwt:true}) as listNodes
+    getNodes = async()=>{
+      const res  = await clientApi.get({url:`/node/getNodes/lists`,isJwt:true}) as listNodes
       return res
     }
 
